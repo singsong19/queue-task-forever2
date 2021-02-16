@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>queue-task-forever</title>
+    <style>
+        button:hover {
+            background-color: cornflowerblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button>While(true)</button>
+    <script>
+        const button = document.querySelector('button');
+        button.addEventListener('click', () =>{
+            while (true) {
+                //CallStack이 영원히 끝나지 않고, 계속 돌기 때문에 업데이트가 되지 않음.
+            }
+        });
+    </script>
+</body>
+</html>
